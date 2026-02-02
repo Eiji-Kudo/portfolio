@@ -115,6 +115,11 @@ ul {
 .nav-links {
   display: flex;
   gap: 2.5rem;
+  width: 100%;
+}
+
+.nav-links a:first-child {
+  margin-right: auto;
 }
 
 .nav-links a {
@@ -261,8 +266,27 @@ ul {
   text-shadow: 0 0 6px rgba(0, 240, 255, 0.3);
 }
 
-.hero-name {
+.hero-profile {
+  display: flex;
+  align-items: center;
+  gap: 14rem;
   margin-bottom: 3rem;
+}
+
+.hero-profile-text {
+}
+
+.hero-avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
+.hero-name {
 }
 
 .hero-name-jp {
