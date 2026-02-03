@@ -27,7 +27,7 @@
     "card1": {
       "title": "Design, Operation & Optimization of Service Runtime Infrastructure",
       "p1": "Designed and built production infrastructure including container runtimes such as EKS and ECS, covering CD, observability, scaling, and security.",
-      "p2": "Established GitOps with ArgoCD Helm management, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by eliminating shared PEM keys and configuring RDS audit logs.",
+      "p2": "Established GitOps with ArgoCD Helm management, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by remediating credential management vulnerabilities and configuring RDS audit logs.",
       "p3": "Reduced backend memory usage by 10% through query redesign eliminating N+1 issues and implementing staged data fetching. Automated IaC operations by building Terraform CI/CD pipelines.",
       "note": "Led planning and execution of ~20% infrastructure cost reduction:",
       "noteItems": [
