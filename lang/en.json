@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Eiji Kudo | Software Engineer / SRE",
+    "description": "Portfolio of Eiji Kudo. SWE/SRE working on FANME development.",
+    "ogTitle": "Eiji Kudo | Software Engineer / SRE",
+    "ogDescription": "An engineer who values motivation above all else"
+  },
+  "hero": {
+    "quote": "Motivation matters most",
+    "info": "Working at <a href=\"https://www.torihada.co.jp/\" class=\"link\" target=\"_blank\" rel=\"noopener\">TORIHADA Inc.</a> on <a href=\"https://fanme.link/\" class=\"link\" target=\"_blank\" rel=\"noopener\">FANME</a> (billions of monthly accesses).<br>Technically leading the design and development of services handling thousands of req/sec. Driving system design, performance optimization, and developer experience improvement across infrastructure, backend, and frontend."
+  },
+  "about": {
+    "personality": [
+      "Living by the motto \"Motivation matters most,\" I aim to boost the drive of both myself and my team members",
+      "Rather than forcing \"correct\" opinions, I move team development forward by suggesting things others might not know about in areas they want to explore",
+      "I love business. I strive to understand at the business level, proposing and implementing features with realistic effort estimates",
+      "I work by clearly defining expected milestones, completed tasks, in-progress tasks, and uncertainties"
+    ],
+    "education": [
+      "Keio University, B.E. in Computer Science",
+      "TOEIC 900",
+      "Licensed Real Estate Transaction Specialist"
+    ],
+    "blog": "<a href=\"https://zenn.dev/eiji_k/articles/0431ec68d5666a\" class=\"link\" target=\"_blank\" rel=\"noopener\">Writing technical articles on Zenn</a>"
+  },
+  "experience": {
+    "card1": {
+      "title": "Design, Operation & Optimization of Service Runtime Infrastructure",
+      "p1": "Designed and built production infrastructure including container runtimes such as EKS and ECS, covering CD, observability, scaling, and security.",
+      "p2": "Established GitOps with ArgoCD Helm management, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by eliminating shared PEM keys and configuring RDS audit logs.",
+      "p3": "Reduced backend memory usage by 10% through query redesign eliminating N+1 issues and implementing staged data fetching. Automated IaC operations by building Terraform CI/CD pipelines.",
+      "note": "Led planning and execution of ~20% infrastructure cost reduction:",
+      "noteItems": [
+        "Storage lifecycle optimization",
+        "Right-sizing compute resources and introducing auto-scaling",
+        "Reviewing, estimating, and driving container runtime migration"
+      ]
+    },
+    "card2": {
+      "title": "Building Type-Safe & Testing Infrastructure for Speed and Quality",
+      "p1": "Built an auto-generation pipeline from Kotlin → OpenAPI → typed HTTP clients. Also established automated testing infrastructure for both backend and frontend, and created testing guidelines with appropriate granularity based on past bug cases.",
+      "p2": "This reduced type-mismatch bugs and cut manual verification effort. Achieved a type-safe development workflow that detects API inconsistencies at compile time.",
+      "p3": "Additionally built architecture tests to detect Clean Architecture violations and automated test environments using test DBs. Established a TDD foundation compatible with AI coding tools, accelerating the development cycle.",
+      "note": "Led the initiative from proposal to CTO and team members through to adoption. Organized study sessions to help the team adopt it naturally."
+    },
+    "card3": {
+      "title": "Designing & Building Backend Systems with Managed Services",
+      "p1": "For AI generation features (images/videos) requiring 1+ minute processing times, designed and built an SQS-based async processing infrastructure to achieve fault tolerance impossible with synchronous APIs.",
+      "p2": "Designed and built a toC authentication system using ElastiCache (Redis). Proposed and adopted a proxy authentication approach, eliminating the need for dedicated authentication screens."
+    }
+  },
+  "works": {
+    "fanme": {
+      "role": "Current — SWE / SRE",
+      "desc": "EC app for influencers. Over 1M monthly PVs. Developed by a team of 20 engineers."
+    },
+    "security": {
+      "title": "Security AI Agent Platform",
+      "role": "Full-stack",
+      "desc": "Design and development of a security platform providing AI-powered targeted attack simulations and personalized training. Schema-driven development with Zod OpenAPI for type-safe frontend-backend communication including error handling. Designed with Clean Architecture and DDD."
+    },
+    "creatorMatching": {
+      "title": "Creator Job Matching Platform",
+      "role": "Frontend",
+      "desc": "A matching app connecting creators with business opportunities. Used by 5,000–10,000 users."
+    },
+    "beautyEc": {
+      "title": "Beauty EC App",
+      "role": "Full-stack",
+      "desc": "EC app with influencer reviews. Multiple payment methods including PayPay and convenience store payments."
+    },
+    "careermine": {
+      "role": "Full-stack",
+      "desc": "Job change support app. Implemented LINE/Firebase OAuth integration and interview application features."
+    },
+    "manners": {
+      "title": "Job Hunting Etiquette Navi",
+      "role": "Full-stack",
+      "desc": "Job hunting etiquette media site. Implemented both frontend and backend."
+    },
+    "spi": {
+      "title": "SPI Exam Prep App",
+      "role": "Full-stack",
+      "desc": "SPI exam preparation web app. Implemented user registration."
+    },
+    "construction": {
+      "title": "Construction Management Job App",
+      "role": "Full-stack (solo)",
+      "desc": "A job search and career support app for specialized engineers."
+    },
+    "constructionExam": {
+      "title": "Construction Exam Prep App",
+      "role": "Lead (with interns)",
+      "desc": "Past exam practice app for 2nd-class Building Construction Management Engineer. Registration, answering, and weak-point features."
+    },
+    "uiLibrary": {
+      "title": "Internal Shared UI Library",
+      "role": "Lead",
+      "desc": "Built a shared UI component library with Storybook for internal use. Hosted on GitHub Pages."
+    }
+  },
+  "contact": {
+    "detail": "Detailed resume available!",
+    "cta": "Feel free to reach out via email or DM."
+  }
+}

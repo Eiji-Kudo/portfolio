@@ -26,6 +26,11 @@
       <a href="#works">Works</a>
       <a href="#contact">Contact</a>
     </div>
+    <div class="lang-switcher">
+      <button class="lang-btn lang-btn-active" data-lang="ja">JA</button>
+      <span class="lang-sep">/</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
   </nav>
 </header>
 
@@ -48,10 +53,10 @@
     </div>
     <div class="hero-bottom">
       <div class="hero-quote">
-        <span class="quote-mark">"</span>モチベが一番大事<span class="quote-mark">"</span>
+        <span class="quote-mark">"</span><span data-i18n="hero.quote">モチベが一番大事</span><span class="quote-mark">"</span>
       </div>
       <div class="hero-info">
-        <p>
+        <p data-i18n-html="hero.info">
           <a href="https://www.torihada.co.jp/" class="link" target="_blank" rel="noopener">株式会社TORIHADA</a> にて
           <a href="https://fanme.link/" class="link" target="_blank" rel="noopener">FANME</a>
           (月数十億アクセス規模) の開発に従事。<br>
@@ -77,7 +82,7 @@
     <div class="about-layout">
       <div class="about-main">
         <div class="about-card" data-label="> personality_">
-          <ul>
+          <ul data-i18n="about.personality">
             <li>「モチベが一番大事」をモットーに、自分自身・チームメンバーのやる気を上げることを目標にしています</li>
             <li>正論パンチではなく、相手のやりたいことで知らないかもしれないことを提案する形でチーム開発を前に進めます</li>
             <li>ビジネスが好き。事業レベルから理解に努め、理想の工数とともに機能の提案・実装を行います</li>
@@ -87,14 +92,14 @@
       </div>
       <div class="about-side">
         <div class="about-card" data-label="> education_">
-          <ul>
+          <ul data-i18n="about.education">
             <li>慶應義塾大学 情報工学専攻 卒</li>
             <li>TOEIC 900</li>
             <li>宅地建物取引士</li>
           </ul>
         </div>
         <div class="about-card" data-label="> blog_">
-          <p><a href="https://zenn.dev/eiji_k/articles/0431ec68d5666a" class="link" target="_blank" rel="noopener">Zenn にて技術記事を執筆中</a></p>
+          <p data-i18n-html="about.blog"><a href="https://zenn.dev/eiji_k/articles/0431ec68d5666a" class="link" target="_blank" rel="noopener">Zenn にて技術記事を執筆中</a></p>
         </div>
       </div>
     </div>
@@ -173,19 +178,19 @@
       <article class="exp-card">
         <div class="timeline-node"><span class="exp-num">01</span></div>
         <div class="exp-content">
-          <h3>サービス実行基盤の設計・運用・最適化</h3>
-          <p>
+          <h3 data-i18n="experience.card1.title">サービス実行基盤の設計・運用・最適化</h3>
+          <p data-i18n="experience.card1.p1">
             EKS・ECSといったコンテナ実行基盤を含む本番サービス群のインフラを、CD・可観測性・スケーリング・セキュリティの各領域で設計・構築した。
           </p>
-          <p>
+          <p data-i18n="experience.card1.p2">
             ArgoCDのHelm管理化によるGitOps基盤の整備、Datadog APMによる全サービスの可観測性確保、HPAとCluster Autoscalerによるトラフィック増加への自動対応、CronJobワークロードの分離による本番安定性の向上を実現。共有PEM廃止やRDS監査ログ設定などセキュリティ面も整備した。
           </p>
-          <p>
+          <p data-i18n="experience.card1.p3">
             データアクセス層のクエリ設計を見直し、N+1解消と取得データの段階化によりバックエンドのメモリ使用率を10%削減。Terraform CI/CD基盤の構築によりIaCの運用を自動化した。
           </p>
           <aside class="exp-note">
-            インフラコストの約20%削減の施策立案・実行をリード:
-            <ul>
+            <span data-i18n="experience.card1.note">インフラコストの約20%削減の施策立案・実行をリード:</span>
+            <ul data-i18n="experience.card1.noteItems">
               <li>ストレージライフサイクルの最適化</li>
               <li>コンピュートリソースの適正化とオートスケーリングの導入</li>
               <li>コンテナ実行基盤の見直し・試算・推進</li>
@@ -197,18 +202,18 @@
       <article class="exp-card">
         <div class="timeline-node"><span class="exp-num">02</span></div>
         <div class="exp-content">
-          <h3>開発速度と品質を両立させる型安全・テスト基盤の構築</h3>
-          <p>
+          <h3 data-i18n="experience.card2.title">開発速度と品質を両立させる型安全・テスト基盤の構築</h3>
+          <p data-i18n="experience.card2.p1">
             Kotlin → OpenAPI → 型付きHTTPクライアントの自動生成パイプラインを構築。あわせてバックエンド・フロントエンド双方の自動テスト基盤を整備し、過去のバグ事例をもとに適切なテスト粒度を定めたガイドラインを策定した。
           </p>
-          <p>
+          <p data-i18n="experience.card2.p2">
             これにより型不整合起因のバグが減少し、手動での動作確認工数も削減。API変更時にコンパイルレベルで不整合を検知できる型安全な開発体制を実現した。
           </p>
-          <p>
+          <p data-i18n="experience.card2.p3">
             さらにクリーンアーキテクチャの逸脱を検知するアーキテクチャテストと、test DBを用いた自動テスト環境を構築。AIコーディングツールと協調できるTDD基盤を整え、開発サイクルの高速化を推進した。
           </p>
           <aside class="exp-note">
-            CTO・チームメンバーへの提案から導入まで主導。勉強会を開催し、チームが自然に使える状態を目指した。
+            <span data-i18n="experience.card2.note">CTO・チームメンバーへの提案から導入まで主導。勉強会を開催し、チームが自然に使える状態を目指した。</span>
           </aside>
         </div>
       </article>
@@ -216,11 +221,11 @@
       <article class="exp-card">
         <div class="timeline-node"><span class="exp-num">03</span></div>
         <div class="exp-content">
-          <h3>マネージドサービスを活用したバックエンドシステムの設計・構築</h3>
-          <p>
+          <h3 data-i18n="experience.card3.title">マネージドサービスを活用したバックエンドシステムの設計・構築</h3>
+          <p data-i18n="experience.card3.p1">
             AI生成機能（画像・動画）で1分以上の処理時間が発生する要件に対し、同期APIでは実現できない耐障害性をSQSベースの非同期処理基盤で設計・構築した。
           </p>
-          <p>
+          <p data-i18n="experience.card3.p2">
             toC向けの認証システムをElastiCache（Redis）で設計・構築。代理認証方式を提案・採用し、専用画面の開発・管理を不要にした。
           </p>
         </div>
@@ -240,23 +245,14 @@
       <article class="project-card project-card-featured">
         <span class="badge-live"><span class="badge-live-dot"></span>LIVE</span>
         <h3><a href="https://fanme.link/" class="link" target="_blank" rel="noopener">FANME</a></h3>
-        <p class="project-role">現職 — SWE / SRE</p>
-        <p>インフルエンサー向けECアプリ。月間100万PV以上。20人規模のエンジニアチームで開発。</p>
-        <div class="skill-tags">
-          <span class="tag-sm">Kotlin</span>
-          <span class="tag-sm">TypeScript</span>
-          <span class="tag-sm">Kubernetes</span>
-          <span class="tag-sm">ArgoCD</span>
-          <span class="tag-sm">AWS</span>
-          <span class="tag-sm">GCP</span>
-          <span class="tag-sm">Datadog</span>
-        </div>
+        <p class="project-role" data-i18n="works.fanme.role">現職 — SWE / SRE</p>
+
       </article>
 
       <article class="project-card">
-        <h3><a href="https://yagurasec.com/" class="link" target="_blank" rel="noopener">セキュリティAIエージェント基盤</a></h3>
-        <p class="project-role">フルスタック</p>
-        <p>生成AIを活用した標的型攻撃シミュレーション・パーソナライズ教育を提供するセキュリティプラットフォームの設計・開発。Zod OpenAPIによるスキーマ駆動でフロント・バックエンド間をエラーハンドリング含め型安全に開発した。クリーンアーキテクチャ・DDDに基づく設計を行なった。</p>
+        <h3><a href="https://yagurasec.com/" class="link" target="_blank" rel="noopener" data-i18n="works.security.title">セキュリティAIエージェント基盤</a></h3>
+        <p class="project-role" data-i18n="works.security.role">フルスタック</p>
+        <p data-i18n="works.security.desc">生成AIを活用した標的型攻撃シミュレーション・パーソナライズ教育を提供するセキュリティプラットフォームの設計・開発。Zod OpenAPIによるスキーマ駆動でフロント・バックエンド間をエラーハンドリング含め型安全に開発した。クリーンアーキテクチャ・DDDに基づく設計を行なった。</p>
         <div class="skill-tags">
           <span class="tag-sm">Hono</span>
           <span class="tag-sm">React</span>
@@ -268,9 +264,9 @@
 
       <article class="project-card">
         <img src="images/creator-matching.png" alt="クリエイター向け案件マッチングプラットフォーム" class="project-img">
-        <h3>クリエイター向け案件マッチングプラットフォーム</h3>
-        <p class="project-role">フロントエンド担当</p>
-        <p>クリエイターと企業案件をつなぐマッチングアプリ。5,000〜10,000人のユーザーが利用。</p>
+        <h3 data-i18n="works.creatorMatching.title">クリエイター向け案件マッチングプラットフォーム</h3>
+        <p class="project-role" data-i18n="works.creatorMatching.role">フロントエンド担当</p>
+        <p data-i18n="works.creatorMatching.desc">クリエイターと企業案件をつなぐマッチングアプリ。5,000〜10,000人のユーザーが利用。</p>
         <div class="skill-tags">
           <span class="tag-sm">React Native Expo</span>
           <span class="tag-sm">Firebase</span>
@@ -281,9 +277,9 @@
 
       <article class="project-card">
         <img src="images/beauty-ec.png" alt="美容系ECアプリ" class="project-img">
-        <h3>美容系ECアプリ</h3>
-        <p class="project-role">フルスタック</p>
-        <p>インフルエンサーReview付きECアプリ。PayPay決済・コンビニ決済など複数決済対応。</p>
+        <h3 data-i18n="works.beautyEc.title">美容系ECアプリ</h3>
+        <p class="project-role" data-i18n="works.beautyEc.role">フルスタック</p>
+        <p data-i18n="works.beautyEc.desc">インフルエンサーReview付きECアプリ。PayPay決済・コンビニ決済など複数決済対応。</p>
         <div class="skill-tags">
           <span class="tag-sm">React Native Expo</span>
           <span class="tag-sm">Ruby on Rails (Spree)</span>
@@ -294,8 +290,8 @@
 
       <article class="project-card">
         <h3><a href="https://apps.apple.com/jp/app/%E8%BB%A2%E8%81%B7%E3%81%AA%E3%82%89careermine-%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E8%A8%BA%E6%96%AD-%E6%B1%82%E4%BA%BA%E7%B4%B9%E4%BB%8B/id6450152388?l=en-US" class="link" target="_blank" rel="noopener">CareerMine</a></h3>
-        <p class="project-role">フルスタック</p>
-        <p>転職支援アプリ。LINE・Firebase連携OAuth、面談応募機能を実装。</p>
+        <p class="project-role" data-i18n="works.careermine.role">フルスタック</p>
+        <p data-i18n="works.careermine.desc">転職支援アプリ。LINE・Firebase連携OAuth、面談応募機能を実装。</p>
         <div class="skill-tags">
           <span class="tag-sm">React Native</span>
           <span class="tag-sm">Ruby on Rails</span>
@@ -304,9 +300,9 @@
       </article>
 
       <article class="project-card">
-        <h3><a href="https://manners.careermine.jp/media" class="link" target="_blank" rel="noopener">就活マナーナビ</a></h3>
-        <p class="project-role">フルスタック</p>
-        <p>就活マナー情報メディア。フロントエンド・バックエンド両方を実装。</p>
+        <h3><a href="https://manners.careermine.jp/media" class="link" target="_blank" rel="noopener" data-i18n="works.manners.title">就活マナーナビ</a></h3>
+        <p class="project-role" data-i18n="works.manners.role">フルスタック</p>
+        <p data-i18n="works.manners.desc">就活マナー情報メディア。フロントエンド・バックエンド両方を実装。</p>
         <div class="skill-tags">
           <span class="tag-sm">Next.js App Router</span>
           <span class="tag-sm">Ruby on Rails</span>
@@ -315,9 +311,9 @@
       </article>
 
       <article class="project-card">
-        <h3><a href="https://spi.careermine.jp/" class="link" target="_blank" rel="noopener">SPI対策アプリ</a></h3>
-        <p class="project-role">フルスタック</p>
-        <p>SPI対策Webアプリ。会員登録機能を実装。</p>
+        <h3><a href="https://spi.careermine.jp/" class="link" target="_blank" rel="noopener" data-i18n="works.spi.title">SPI対策アプリ</a></h3>
+        <p class="project-role" data-i18n="works.spi.role">フルスタック</p>
+        <p data-i18n="works.spi.desc">SPI対策Webアプリ。会員登録機能を実装。</p>
         <div class="skill-tags">
           <span class="tag-sm">Next.js Pages Router</span>
           <span class="tag-sm">Ruby on Rails</span>
@@ -325,9 +321,9 @@
       </article>
 
       <article class="project-card">
-        <h3>施工管理求人アプリ</h3>
-        <p class="project-role">フルスタック（一人で実装）</p>
-        <p>専門技術者のための求人・転職サポートアプリ。</p>
+        <h3 data-i18n="works.construction.title">施工管理求人アプリ</h3>
+        <p class="project-role" data-i18n="works.construction.role">フルスタック（一人で実装）</p>
+        <p data-i18n="works.construction.desc">専門技術者のための求人・転職サポートアプリ。</p>
         <div class="skill-tags">
           <span class="tag-sm">React Native</span>
           <span class="tag-sm">Firebase (Firestore)</span>
@@ -335,9 +331,9 @@
       </article>
 
       <article class="project-card">
-        <h3>施工管理対策アプリ</h3>
-        <p class="project-role">リード（インターン生とともに実装）</p>
-        <p>2級建築施工管理技士の過去問対策アプリ。会員登録・問題解答・苦手問題機能。</p>
+        <h3 data-i18n="works.constructionExam.title">施工管理対策アプリ</h3>
+        <p class="project-role" data-i18n="works.constructionExam.role">リード（インターン生とともに実装）</p>
+        <p data-i18n="works.constructionExam.desc">2級建築施工管理技士の過去問対策アプリ。会員登録・問題解答・苦手問題機能。</p>
         <div class="skill-tags">
           <span class="tag-sm">React Native</span>
           <span class="tag-sm">Firebase (Firestore)</span>
@@ -345,9 +341,9 @@
       </article>
 
       <article class="project-card">
-        <h3>社内共通UIライブラリ</h3>
-        <p class="project-role">リード</p>
-        <p>社内で使用する共通UIコンポーネントライブラリをStorybookで構築。GitHub Pagesでホスト。</p>
+        <h3 data-i18n="works.uiLibrary.title">社内共通UIライブラリ</h3>
+        <p class="project-role" data-i18n="works.uiLibrary.role">リード</p>
+        <p data-i18n="works.uiLibrary.desc">社内で使用する共通UIコンポーネントライブラリをStorybookで構築。GitHub Pagesでホスト。</p>
         <div class="skill-tags">
           <span class="tag-sm">Storybook</span>
           <span class="tag-sm">React Hook Form</span>
@@ -367,8 +363,8 @@
     </div>
     <div class="contact-inner">
       <p class="contact-lead">> send_message_</p>
-      <p>詳細な職務経歴書もあります！</p>
-      <p>お気軽にメールまたはDMにてご連絡ください。</p>
+      <p data-i18n="contact.detail">詳細な職務経歴書もあります！</p>
+      <p data-i18n="contact.cta">お気軽にメールまたはDMにてご連絡ください。</p>
       <div class="contact-links">
         <a href="mailto:gushy.nurture.0b@icloud.com" class="btn btn-accent">Email</a>
         <a href="https://x.com/tech_eassy" class="btn btn-accent" target="_blank" rel="noopener">X (Twitter) DM</a>
@@ -388,5 +384,6 @@
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 </body>
 </html>
