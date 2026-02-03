@@ -61,7 +61,7 @@
     },
     "creatorMatching": {
       "title": "Creator Job Matching Platform",
-      "role": "Frontend",
+      "role": "Full-stack",
       "desc": "A matching app connecting creators with business opportunities. Used by 5,000–10,000 users."
     },
     "beautyEc": {
@@ -90,7 +90,7 @@
     },
     "constructionExam": {
       "title": "Construction Exam Prep App",
-      "role": "Lead (with interns)",
+      "role": "Tech Lead & Management",
       "desc": "Past exam practice app for 2nd-class Building Construction Management Engineer. Registration, answering, and weak-point features."
     },
     "uiLibrary": {
