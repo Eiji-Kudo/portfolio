@@ -100,8 +100,10 @@
     }
   },
   "contact": {
-    "invite": "If you have any work I can help with, feel free to reach out!",
     "detail": "Detailed resume available!",
-    "cta": "I look forward to hearing from you via email or DM."
+    "cta": "Feel free to reach out via email or DM. I look forward to hearing from you!"
+  },
+  "bottomBar": {
+    "message": "If you have any work I can help with, feel free to reach out!"
   }
 }

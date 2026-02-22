@@ -34,6 +34,7 @@ body {
   color: var(--text);
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
+  padding-bottom: 4rem;
   background-image:
     repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(30, 30, 48, 0.4) 59px, rgba(30, 30, 48, 0.4) 60px),
     repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(30, 30, 48, 0.4) 59px, rgba(30, 30, 48, 0.4) 60px);
@@ -870,6 +871,49 @@ ul {
   margin-top: 2.5rem;
 }
 
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(10, 10, 18, 0.85);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -1px 12px rgba(0, 240, 255, 0.08);
+  transition: opacity 0.4s, transform 0.4s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bottom-bar.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.bottom-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.bottom-bar-inner p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.btn-sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.65rem;
+  flex-shrink: 0;
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 3rem 0;
@@ -942,6 +986,8 @@ ul {
   .project-card-featured {
     grid-column: 1 / -1;
   }
+
+  .bottom-bar-inner { padding: 0.75rem 1.5rem; }
 
   .section { padding: 5rem 0; }
 
@@ -1026,6 +1072,15 @@ ul {
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
+  }
+
+  .bottom-bar-inner {
+    padding: 0.65rem 1rem;
+    gap: 1rem;
+  }
+
+  .bottom-bar-inner p {
+    font-size: 0.78rem;
   }
 
   .contact-links {

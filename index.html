@@ -357,9 +357,8 @@
     </div>
     <div class="contact-inner">
       <p class="contact-lead">> send_message_</p>
-      <p data-i18n="contact.invite">お手伝いできるお仕事がありましたら、ぜひお気軽にご連絡ください！</p>
       <p data-i18n="contact.detail">詳細な職務経歴書もあります！</p>
-      <p data-i18n="contact.cta">メールまたはDMにてお待ちしております。</p>
+      <p data-i18n="contact.cta">お気軽にメールまたはDMにてご連絡ください。お待ちしております！</p>
       <div class="contact-links">
         <a href="mailto:gushy.nurture.0b@icloud.com" class="btn btn-accent">Email</a>
         <a href="https://x.com/tech_eassy" class="btn btn-accent" target="_blank" rel="noopener">X (Twitter) DM</a>
@@ -379,6 +378,26 @@
   </div>
 </footer>
 
+<div class="bottom-bar" id="bottomBar">
+  <div class="bottom-bar-inner">
+    <p data-i18n="bottomBar.message">お手伝いできるお仕事がありましたら、ぜひお気軽にご連絡ください！</p>
+    <a href="#contact" class="btn btn-accent btn-sm">Contact</a>
+  </div>
+</div>
+
 <script src="i18n.js"></script>
+<script>
+(function() {
+  var bar = document.getElementById('bottomBar');
+  var contact = document.getElementById('contact');
+  if (!bar || !contact) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      bar.classList.toggle('hidden', entry.isIntersecting);
+    });
+  }, { threshold: 0 });
+  observer.observe(contact);
+})();
+</script>
 </body>
 </html>
