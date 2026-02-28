@@ -27,7 +27,7 @@
     "card1": {
       "title": "Design, Operation & Optimization of Service Runtime Infrastructure",
       "p1": "Designed and built production infrastructure including container runtimes such as EKS and ECS, covering CD, observability, scaling, and security.",
-      "p2": "Established GitOps with ArgoCD Helm management, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by remediating credential management vulnerabilities and configuring RDS audit logs.",
+      "p2": "Built ArgoCD-based deployment environments and established GitOps through Helm management, constructed ECS infrastructure for FANME's core services, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by remediating credential management vulnerabilities and configuring RDS audit logs.",
       "p3": "Reduced backend memory usage by 10% through query redesign eliminating N+1 issues and implementing staged data fetching. Automated IaC operations by building Terraform CI/CD pipelines.",
       "note": "Led planning and execution of ~20% infrastructure cost reduction:",
       "noteItems": [
@@ -44,6 +44,13 @@
       "note": "Led the initiative from proposal to CTO and team members through to adoption. Organized study sessions to help the team adopt it naturally."
     },
     "card3": {
+      "title": "Designing, Building & Scaling AI Coding Infrastructure Across the Team",
+      "p1": "Codified project-specific coding conventions, architectural design intent, and prohibited patterns in AGENTS.md. Documented both abstract principles and concrete rules, building a foundation that enables AI to make appropriate decisions even in unfamiliar cases.",
+      "p2": "Designed and implemented 25+ Custom Skills to automate PR review, planning, and quality check phases. Built a skill suite covering the entire development cycle — including parallel critical PR analysis by specialized reviewers, exhaustive similar-issue detection, QA checklist generation, and sequential lint → type check → test execution with auto-fix.",
+      "p3": "Built infrastructure to auto-deploy isolated preview environments per PR for rapid verification of AI-generated PRs. Reviewers can start validation by simply accessing a URL, enabling simultaneous verification of multiple AI-generated PRs.",
+      "note": "Since preferred AI tools vary by individual, designed and shared tool-agnostic content such as AGENTS.md writing guides and Skills creation examples. Drove continuous team enabling through study sessions, pair programming, and gradual adoption."
+    },
+    "card4": {
       "title": "Designing & Building Backend Systems with Managed Services",
       "p1": "For AI generation features (images/videos) requiring 1+ minute processing times, designed and built an SQS-based async processing infrastructure to achieve fault tolerance impossible with synchronous APIs.",
       "p2": "Designed and built a toC authentication system using ElastiCache (Redis). Proposed and adopted a proxy authentication approach, eliminating the need for dedicated authentication screens."
