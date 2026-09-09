@@ -6,12 +6,12 @@
     "ogDescription": "An engineer who values motivation above all else"
   },
   "hero": {
-    "quote": "Motivation matters most",
+    "quote": "Motivation comes first",
     "info": "Working at <a href=\"https://www.torihada.co.jp/\" class=\"link\" target=\"_blank\" rel=\"noopener\">TORIHADA Inc.</a> on <a href=\"https://fanme.link/\" class=\"link\" target=\"_blank\" rel=\"noopener\">FANME</a> (billions of monthly accesses).<br>Technically leading the design and development of services handling thousands of req/sec. Driving system design, performance optimization, and developer experience improvement across infrastructure, backend, and frontend."
   },
   "about": {
     "personality": [
-      "Living by the motto \"Motivation matters most,\" I aim to boost the drive of both myself and my team members",
+      "Living by the motto \"Motivation comes first,\" I aim to boost the drive of both myself and my team members",
       "Rather than forcing \"correct\" opinions, I move team development forward by suggesting things others might not know about in areas they want to explore",
       "I love business. I strive to understand at the business level, proposing and implementing features with realistic effort estimates",
       "I work by clearly defining expected milestones, completed tasks, in-progress tasks, and uncertainties"
