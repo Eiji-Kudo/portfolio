@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eiji Kudo | Software Engineer / SRE</title>
-  <meta name="description" content="Portfolio of Eiji Kudo. SWE/SRE working on FANME development.">
-  <meta property="og:title" content="Eiji Kudo | Software Engineer / SRE">
-  <meta property="og:description" content="An engineer who values motivation above all else">
+  <title>Eiji Kudo | Tech Lead / Senior Software Engineer / SRE</title>
+  <meta name="description" content="Portfolio of Eiji Kudo, a Tech Lead, Senior Software Engineer, and SRE working on FANME.">
+  <meta property="og:title" content="Eiji Kudo | Tech Lead / Senior Software Engineer / SRE">
+  <meta property="og:description" content="Leading scalable systems and high-velocity engineering teams">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,7 @@
         <span class="quote-mark">"</span><span>Motivation comes first</span><span class="quote-mark">"</span>
       </div>
       <div class="hero-info">
-        <p>Working at <a href="https://www.torihada.co.jp/" class="link" target="_blank" rel="noopener">TORIHADA Inc.</a> on <a href="https://fanme.link/" class="link" target="_blank" rel="noopener">FANME</a> (billions of monthly accesses).<br>Technically leading the design and development of services handling thousands of req/sec. Driving system design, performance optimisation, and developer experience improvement across infrastructure, backend, and frontend.</p>
+        <p>Tech Lead, Senior Software Engineer, and SRE at <a href="https://www.torihada.co.jp/" class="link" target="_blank" rel="noopener">TORIHADA Inc.</a>, working on <a href="https://fanme.link/" class="link" target="_blank" rel="noopener">FANME</a>.<br>Leading system design for services used by several million monthly users and handling thousands of requests per second, across infrastructure, backend, and frontend.</p>
         <div class="hero-links">
           <a href="https://x.com/tech_eassy" class="btn" target="_blank" rel="noopener">X</a>
           <a href="https://github.com/eijikudo" class="btn" target="_blank" rel="noopener">GitHub</a>
@@ -84,7 +84,7 @@
         <div class="about-card" data-label="> education_">
           <ul>
             <li>Keio University, B.E. in Computer Science</li>
-            <li>TOEIC 900</li>
+            <li>English: TOEIC 915 / TOEFL iBT 95</li>
             <li>Licensed Real Estate Transaction Specialist</li>
           </ul>
         </div>
@@ -106,16 +106,16 @@
       <article class="exp-card">
         <div class="timeline-node"><span class="exp-num">01</span></div>
         <div class="exp-content">
-          <h3>Design, Operation &amp; Optimisation of Service Runtime Infrastructure</h3>
-          <p>Designed and built production infrastructure including container runtimes such as EKS and ECS, covering CD, observability, scaling, and security.</p>
-          <p>Built ArgoCD-based deployment environments and established GitOps through Helm management, constructed ECS infrastructure for FANME's core services, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by remediating credential management vulnerabilities and configuring RDS audit logs.</p>
-          <p>Reduced backend memory usage by 10% through query redesign eliminating N+1 issues and implementing staged data fetching. Automated IaC operations by building Terraform CI/CD pipelines.</p>
+          <h3>Designing Highly Available Infrastructure at Scale</h3>
+          <p>Led the design of EKS and ECS runtime platforms serving several million monthly users and handling thousands of requests per second. Used HPA, Cluster Autoscaler, load testing, and database connection budgets to define safe scaling limits and pre-scaling plans, maintaining availability during traffic spikes of roughly 1,000 times normal levels.</p>
+          <p>Led stakeholder alignment, budget approval, and the zero-downtime migration of multiple production services from EKS to ECS as the business phase and operating model evolved.</p>
+          <p>Reduced infrastructure operations and management labour costs by roughly 80%, and combined AWS, GCP, and Datadog cloud and monitoring spend by roughly 50% through continuous usage analysis and resource right-sizing.</p>
           <aside class="exp-note">
-            <span>Led planning and execution of ~20% infrastructure cost reduction:</span>
+            <span>Led capacity planning and platform optimisation across:</span>
             <ul>
-              <li>Storage lifecycle optimisation</li>
-              <li>Right-sizing compute resources and introducing auto-scaling</li>
-              <li>Reviewing, estimating, and driving container runtime migration</li>
+              <li>Load testing and database connection capacity</li>
+              <li>Horizontal scaling limits and pre-scaling plans</li>
+              <li>Zero-downtime container runtime migration</li>
             </ul>
           </aside>
         </div>
@@ -124,12 +124,12 @@
       <article class="exp-card">
         <div class="timeline-node"><span class="exp-num">02</span></div>
         <div class="exp-content">
-          <h3>Building Type-Safe &amp; Testing Infrastructure for Speed and Quality</h3>
-          <p>Built an auto-generation pipeline from Kotlin → OpenAPI → typed HTTP clients. Also established automated testing infrastructure for both backend and frontend, and created testing guidelines with appropriate granularity based on past bug cases.</p>
-          <p>This reduced type-mismatch bugs and cut manual verification effort. Achieved a type-safe development workflow that detects API inconsistencies at compile time.</p>
-          <p>Additionally built architecture tests to detect Clean Architecture violations and automated test environments using test DBs. Established a TDD foundation compatible with AI coding tools, accelerating the development cycle.</p>
+          <h3>Scaling Delivery with Type Safety, Automated QA &amp; CI/CD</h3>
+          <p>Revamped the development and release platform, increasing deployments per engineer by roughly four times and reducing deployment lead time by roughly 30%.</p>
+          <p>Led product-wide type-safety improvements, including automatically generating typed frontend HTTP clients from backend type definitions.</p>
+          <p>Established automated testing and AI-driven E2E testing, along with AI usage guidelines, implementation standards, and an agreed review workflow, reducing QA and review effort while improving maintainability.</p>
           <aside class="exp-note">
-            <span>Led the initiative from proposal to CTO and team members through to adoption. Organised study sessions to help the team adopt it naturally.</span>
+            <span>Led the initiative from design through team adoption, using guidelines, study sessions, and enablement to make the practices sustainable.</span>
           </aside>
         </div>
       </article>
@@ -151,8 +151,8 @@
         <div class="timeline-node"><span class="exp-num">04</span></div>
         <div class="exp-content">
           <h3>Designing &amp; Building Backend Systems with Managed Services</h3>
-          <p>For AI generation features (images/videos) requiring 1+ minute processing times, designed and built an SQS-based async processing infrastructure to achieve fault tolerance impossible with synchronous APIs.</p>
-          <p>Designed and built a toC authentication system using ElastiCache (Redis). Proposed and adopted a proxy authentication approach, eliminating the need for dedicated authentication screens.</p>
+          <p>Built a shared asynchronous processing platform spanning infrastructure and application code, combining queues and Redis according to workload requirements to move high-load and long-running work out of synchronous request paths.</p>
+          <p>Standardised retries and error handling so workloads could recover automatically from transient failures, then enabled the wider team to apply the same patterns consistently.</p>
         </div>
       </article>
     </div>

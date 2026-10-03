@@ -1,13 +1,13 @@
 {
   "meta": {
-    "title": "Eiji Kudo | Software Engineer / SRE",
-    "description": "Portfolio of Eiji Kudo. SWE/SRE working on FANME development.",
-    "ogTitle": "Eiji Kudo | Software Engineer / SRE",
-    "ogDescription": "An engineer who values motivation above all else"
+    "title": "Eiji Kudo | Tech Lead / Senior Software Engineer / SRE",
+    "description": "Portfolio of Eiji Kudo, a Tech Lead, Senior Software Engineer, and SRE working on FANME.",
+    "ogTitle": "Eiji Kudo | Tech Lead / Senior Software Engineer / SRE",
+    "ogDescription": "Leading scalable systems and high-velocity engineering teams"
   },
   "hero": {
     "quote": "Motivation comes first",
-    "info": "Working at <a href=\"https://www.torihada.co.jp/\" class=\"link\" target=\"_blank\" rel=\"noopener\">TORIHADA Inc.</a> on <a href=\"https://fanme.link/\" class=\"link\" target=\"_blank\" rel=\"noopener\">FANME</a> (billions of monthly accesses).<br>Technically leading the design and development of services handling thousands of req/sec. Driving system design, performance optimization, and developer experience improvement across infrastructure, backend, and frontend."
+    "info": "Tech Lead, Senior Software Engineer, and SRE at <a href=\"https://www.torihada.co.jp/\" class=\"link\" target=\"_blank\" rel=\"noopener\">TORIHADA Inc.</a>, working on <a href=\"https://fanme.link/\" class=\"link\" target=\"_blank\" rel=\"noopener\">FANME</a>.<br>Leading system design for services used by several million monthly users and handling thousands of requests per second, across infrastructure, backend, and frontend."
   },
   "about": {
     "personality": [
@@ -18,30 +18,30 @@
     ],
     "education": [
       "Keio University, B.E. in Computer Science",
-      "TOEIC 900",
+      "English: TOEIC 915 / TOEFL iBT 95",
       "Licensed Real Estate Transaction Specialist"
     ],
     "blog": "<a href=\"https://zenn.dev/eiji_k/articles/0431ec68d5666a\" class=\"link\" target=\"_blank\" rel=\"noopener\">Writing technical articles on Zenn</a><br><a href=\"https://x.com/tech_eassy/articles\" class=\"link\" target=\"_blank\" rel=\"noopener\">Writing technical articles on X</a>"
   },
   "experience": {
     "card1": {
-      "title": "Design, Operation & Optimization of Service Runtime Infrastructure",
-      "p1": "Designed and built production infrastructure including container runtimes such as EKS and ECS, covering CD, observability, scaling, and security.",
-      "p2": "Built ArgoCD-based deployment environments and established GitOps through Helm management, constructed ECS infrastructure for FANME's core services, ensured observability across all services with Datadog APM, enabled auto-scaling with HPA and Cluster Autoscaler, and improved production stability by isolating CronJob workloads. Also hardened security by remediating credential management vulnerabilities and configuring RDS audit logs.",
-      "p3": "Reduced backend memory usage by 10% through query redesign eliminating N+1 issues and implementing staged data fetching. Automated IaC operations by building Terraform CI/CD pipelines.",
-      "note": "Led planning and execution of ~20% infrastructure cost reduction:",
+      "title": "Designing Highly Available Infrastructure at Scale",
+      "p1": "Led the design of EKS and ECS runtime platforms serving several million monthly users and handling thousands of requests per second. Used HPA, Cluster Autoscaler, load testing, and database connection budgets to define safe scaling limits and pre-scaling plans, maintaining availability during traffic spikes of roughly 1,000 times normal levels.",
+      "p2": "Led stakeholder alignment, budget approval, and the zero-downtime migration of multiple production services from EKS to ECS as the business phase and operating model evolved.",
+      "p3": "Reduced infrastructure operations and management labour costs by roughly 80%, and combined AWS, GCP, and Datadog cloud and monitoring spend by roughly 50% through continuous usage analysis and resource right-sizing.",
+      "note": "Led capacity planning and platform optimisation across:",
       "noteItems": [
-        "Storage lifecycle optimization",
-        "Right-sizing compute resources and introducing auto-scaling",
-        "Reviewing, estimating, and driving container runtime migration"
+        "Load testing and database connection capacity",
+        "Horizontal scaling limits and pre-scaling plans",
+        "Zero-downtime container runtime migration"
       ]
     },
     "card2": {
-      "title": "Building Type-Safe & Testing Infrastructure for Speed and Quality",
-      "p1": "Built an auto-generation pipeline from Kotlin → OpenAPI → typed HTTP clients. Also established automated testing infrastructure for both backend and frontend, and created testing guidelines with appropriate granularity based on past bug cases.",
-      "p2": "This reduced type-mismatch bugs and cut manual verification effort. Achieved a type-safe development workflow that detects API inconsistencies at compile time.",
-      "p3": "Additionally built architecture tests to detect Clean Architecture violations and automated test environments using test DBs. Established a TDD foundation compatible with AI coding tools, accelerating the development cycle.",
-      "note": "Led the initiative from proposal to CTO and team members through to adoption. Organized study sessions to help the team adopt it naturally."
+      "title": "Scaling Delivery with Type Safety, Automated QA & CI/CD",
+      "p1": "Revamped the development and release platform, increasing deployments per engineer by roughly four times and reducing deployment lead time by roughly 30%.",
+      "p2": "Led product-wide type-safety improvements, including automatically generating typed frontend HTTP clients from backend type definitions.",
+      "p3": "Established automated testing and AI-driven E2E testing, along with AI usage guidelines, implementation standards, and an agreed review workflow, reducing QA and review effort while improving maintainability.",
+      "note": "Led the initiative from design through team adoption, using guidelines, study sessions, and enablement to make the practices sustainable."
     },
     "card3": {
       "title": "Designing, Building & Scaling AI Coding Infrastructure Across the Team",
@@ -52,14 +52,14 @@
     },
     "card4": {
       "title": "Designing & Building Backend Systems with Managed Services",
-      "p1": "For AI generation features (images/videos) requiring 1+ minute processing times, designed and built an SQS-based async processing infrastructure to achieve fault tolerance impossible with synchronous APIs.",
-      "p2": "Designed and built a toC authentication system using ElastiCache (Redis). Proposed and adopted a proxy authentication approach, eliminating the need for dedicated authentication screens."
+      "p1": "Built a shared asynchronous processing platform spanning infrastructure and application code, combining queues and Redis according to workload requirements to move high-load and long-running work out of synchronous request paths.",
+      "p2": "Standardised retries and error handling so workloads could recover automatically from transient failures, then enabled the wider team to apply the same patterns consistently."
     }
   },
   "works": {
     "fanme": {
-      "role": "Current — SWE / SRE",
-      "desc": "EC app for influencers. Over 1M monthly PVs. Developed by a team of 20 engineers."
+      "role": "Current — Tech Lead / Senior Software Engineer / SRE",
+      "desc": "A link-in-bio and e-commerce platform for creators, used by several million monthly users and designed to handle thousands of requests per second."
     },
     "security": {
       "title": "Security AI Agent Platform",
